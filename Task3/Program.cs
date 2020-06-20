@@ -10,9 +10,9 @@ namespace Task3
             Employee employee = new Employee("Михайлюк", "Артур");
 
             Console.Write("Спецiалiст: ");
-            Console.Write(employee.Lastname);
+            Console.Write(employee.LastName);
             Console.Write(" ");
-            Console.WriteLine(employee.Firstname);
+            Console.WriteLine(employee.FirstName);
             
             employee.SetPosition("Розробник баз даних");               
             Console.WriteLine("Посада:  {0}", employee.Position);    

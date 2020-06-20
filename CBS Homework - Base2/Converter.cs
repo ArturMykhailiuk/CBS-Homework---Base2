@@ -6,32 +6,48 @@ namespace Task2
 {
     class Converter
     {      
-        double usduah { get; set; }
-        double euruah { get; set; }
-        double rubuah { get; set; }
-        double uahusd { get; set; }
-        double uaheur { get; set; }
-        double uahrub { get; set; }
-        
-        public double USDUAH { get { return usduah; } }
-        public double EURUAH { get { return euruah; } }
-        public double RUBUAH { get { return rubuah; } }
-        public double UAHUSD { get { return uahusd; } }
-        public double UAHEUR { get { return uaheur; } }
-        public double UAHRUB { get { return uahrub; } }
-        
+        public double Usd { get; set; }
+        public double Eur { get; set; }
+        public double Rub { get; set; }
+        public double Uah { get; set; }
+
         public Converter(double usd, double eur, double rub)
         {
-            usduah = 26.7 * usd;
-            euruah = 29.2 * eur;
-            rubuah = 0.40 * rub;
+            Usd = usd;
+            Eur = eur;
+            Rub = rub;
         }
-
         public Converter(double uah)
         {
-            uahusd = uah / 26.7;
-            uaheur = uah / 29.2;
-            uahrub = uah / 0.40;
+            Uah = uah;
         }
+
+
+        public double UsdToUah()
+        {
+            return Usd * 26.7;
+        }       
+        public double EurToUah()
+        {
+            return Eur * 29.4;
+        }
+        public double RubToUah()
+        {
+            return Rub * 0.4;
+        }
+
+        public double UahToUsd()
+        {
+            return Uah / 26.7;
+        }
+        public double UahToEur()
+        {
+            return Uah / 29.4;
+        }
+        public double UahToRub()
+        {
+            return Uah / 0.4;
+        }
+
     }
 }

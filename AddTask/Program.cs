@@ -11,7 +11,7 @@ namespace AddTask
             Console.WriteLine(user.FirstName);
             Console.WriteLine(user.LastName);
             Console.WriteLine(user.Age);
-            Console.WriteLine(user.Date);
+            Console.WriteLine(user.Date1);
         }
     }
 }

@@ -6,14 +6,14 @@ namespace Task3
 {
     class Employee
     {
-        public string Lastname { get; set; }
-        public string Firstname { get; set; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
         public string Position { get; set; }
 
         public Employee(string lastname, string firstname)
         {
-            this.Lastname = lastname;
-            this.Firstname = firstname;
+            this.LastName = lastname;
+            this.FirstName = firstname;
         }
 
         public void SetPosition(string position)    //---пришлось создать этот метод, так как не мог получать должность до вызова метода GetSalary()

@@ -5,28 +5,20 @@ using System.Text;
 namespace AddTask
 {
     class User
-    {
-
-        string login; 
-        string firstname;
-        string lastname;
-        int age;
-        readonly DateTime date;
-      
-    
-        public string Login     { get { return login; }     set { Login = value; } }
-        public string FirstName { get { return firstname; } set { FirstName = value; } }
-        public string LastName  { get { return lastname; }  set { LastName = value; } }
-        public int Age          { get { return age; }       set { Age = value; } }
-        public DateTime Date    { get { return date; } }
+    {         
+        public string Login     { get; set; }
+        public string FirstName { get; set; }
+        public string LastName  { get; set; }
+        public int Age          { get; set; }
+        public DateTime Date1   { get; set; }
 
         public User()   
         {
-            login = "Droop";
-            firstname = "Artur";
-            lastname = "Mykhailiuk";
-            age = 39;
-            DateTime date = new DateTime(2020, 6, 20);            
+            Login = "Droop";
+            FirstName = "Artur";
+            LastName = "Mykhailiuk";
+            Age = 39;
+            Date1 = DateTime.Now;            
         }
     }
 }
